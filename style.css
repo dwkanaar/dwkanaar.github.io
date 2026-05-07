@@ -76,25 +76,26 @@ footer.site-footer {
 /* ---------- Hero / portrait ---------- */
 .hero {
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
+  align-items: flex-start;
+  gap: 1.25rem;
   margin: 0.5rem 0 0.5rem;
 }
 .hero-text { flex: 1 1 auto; min-width: 0; }
 .hero-text h1 { margin-top: 0; }
 .headshot {
   flex: 0 0 auto;
-  width: 150px;
-  height: 150px;
+  height: 4cm;          /* ~2 inches tall on a standard monitor */
+  width: auto;          /* preserve natural aspect ratio */
+  max-width: 4cm;       /* but never wider than it is tall */
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 6px;
   border: 1px solid var(--rule);
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 
 @media (max-width: 520px) {
   .hero { flex-direction: column; align-items: flex-start; gap: 1rem; }
-  .headshot { width: 120px; height: 120px; }
+  .headshot { height: 3cm; max-width: 3cm; }
 }
 
 /* ---------- Headings & text ---------- */
