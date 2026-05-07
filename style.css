@@ -168,6 +168,17 @@ ol.pub-list li::before {
   border-color: var(--accent);
 }
 
+/* ---------- CV embed ---------- */
+.cv-embed {
+  display: block;
+  width: 100%;
+  height: 85vh;       /* tall enough to read; resize browser to fit */
+  min-height: 600px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: #fafafa;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 520px) {
   body { font-size: 16px; }
